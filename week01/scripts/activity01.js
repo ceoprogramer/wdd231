@@ -6,6 +6,7 @@ const message = document.querySelector('aside');
 // Varibles for activity use
 let citynames = ["New York","Sacramento","Cleveland","South Bend","Tampa Bay","Corpus Christi"];
 let volume = 409;
+let quantity = document.querySelector('#q').value;
 
 function getCelsius(fahrenheit) {
 	return (fahrenheit - 32) * (5/9);
@@ -33,6 +34,7 @@ today1.innerHTML = new Date().toLocaleDateString("en-US", options);
 today2.innerHTML = `<strong>Volume</strong>: ${volume} liters`;
 
 // Question #3
+document.querySelector('aside').innerHTML = 'Welcome to <em>our</em> neighborhood!';
 
 // Question #4
 
