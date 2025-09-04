@@ -29,7 +29,8 @@ const options = {
 today1.innerHTML = new Date().toLocaleDateString("en-US", options);
 
 // Question #2
-today2.innerHTML = "<strong>Volume</strong>: " + volume + " liters";
+//today2.innerHTML = "<strong>Volume</strong>: " + volume + " liters";
+today2.innerHTML = `<strong>Volume</strong>: ${volume} liters`;
 
 // Question #3
 
