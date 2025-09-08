@@ -112,6 +112,7 @@ p {
 	margin: 1rem auto;
 	width: fit-content;
 	font-family: Acme, sans-serif;
+    font-size: 1rem;
 }
 
 /*********Footer ******/
@@ -176,7 +177,7 @@ footer{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 0.8rem;
 }
 
 /* Content "About Me" Card (Grid image and Text) */
