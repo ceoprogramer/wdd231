@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>Web and Computer Programming Certificate</title>
+    <meta name="description" content="Web and Computer Programming Certificate BYU-Idaho University">
+    <meta name="author" content="Fabiola Sánchez">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
 </head>
 <body>
-    <h1>WDD 231 - Fabiola Sánchez</h1>
+    <header>
+        <img src="images/logoBYU-idaho.png" alt="site logo" width ="512" height="512"
+        <span> Web and Computer Programming Certificate Site</span>
+        <button id ="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main> 
+        <h1>Home</h1>
+        <div class="content-grid">
+            
+            <section  class="about-me-card">
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <div class="text-content">
+                        <p>My name is Fabiola. I live with my family in Mérida Yucatán. México. I am currently Studyin Web and Computer Programming in BYU-IDOHO. I love my family and I love spending time with them. I love to travel and learn new things.</p>                   
+                    </div>    
+                    
+                </div>     
+            
+            </section>
+
+            <aside class="resources-card">
+                <h2>Student Photo</h2>
+                     <div class="image-content">
+                        <img src="images/profile.jpg" alt="Profile picture of Rubia M. Francesco" class="profile-image">
+                    </div>
+            </aside>
+    
+        </div>  
+
+        <h2>Web Certificate Courses</h2>
+    </main>
+    <footer>
+        <p> The total credits for course listed above is 6</p>
+        <div class="social">
+            <a href="" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x" width="16" height="16"></a>
+        </div>
+        <div class="main-footer">
+            <p id="year"></p>
+            <p id="medium"></p>
+        </div>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/getdates.js"></script>
+    
 </body>
 </html>
