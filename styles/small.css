@@ -30,9 +30,9 @@ header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
-    align-items: end;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
+    align-items:end;
 }
 
 header img{
@@ -142,7 +142,7 @@ footer{
 
 }
 .social a:hover{
-    background-color:ddd;
+    background-color:#ddd;
 }
 
 
