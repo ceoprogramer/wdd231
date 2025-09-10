@@ -24,23 +24,23 @@
 
 }
 
+
 @media (min-width: 640px) {
-	nav ul {
-		display: flex;
+    nav ul {
+        display: flex;
+    }
 
-		li {
-			flex: 1 1 100%;
-		}
-	}
+    nav ul li {
+        flex: 1 1 100%;
+    }
 
-	h1 {
-		font-size: 2rem;
-	}
+    h1 {
+        font-size: 2rem;
+    }
 
-	p {
-		font-size: larger;
-	}
-
+    p {
+        font-size: larger;
+    }
 
     .content-grid {
         grid-template-columns: 2fr 1fr;
