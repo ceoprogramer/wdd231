@@ -151,7 +151,7 @@ footer{
 
 .content-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Column bigger for "About Me", other for "Resources" */
+    grid-template-columns: 1fr; /* Column bigger for "About Me", other for "Resources" one column for movil */
     gap: 1.5rem; /* space bettwen cards */
     padding: 1.5rem;
     max-width: 1200px; 
@@ -228,3 +228,75 @@ footer{
     border: 1px solid var(--border-color); /* ligth border */
 }
 
+
+/* Styles for filter buttons */
+.course-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.course-buttons button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.course-buttons button:hover, .course-buttons button.active {
+    background-color: #E0745F;
+    color: #fff;
+}
+
+/* Styles for cards courses */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 5px solid #ccc; /* Borde por defecto */
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles for completed courses */
+.completed {
+    background-color: #f9f9e5; 
+    border-left: 5px solid #28a745; 
+    position: relative;
+}
+
+.completed::after {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #28a745;
+}
+
+.course-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #555;
+}

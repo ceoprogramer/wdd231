@@ -40,4 +40,9 @@
 	p {
 		font-size: larger;
 	}
+
+
+    .content-grid {
+        grid-template-columns: 2fr 1fr;
+    }
 }
