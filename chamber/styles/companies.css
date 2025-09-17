@@ -9,19 +9,23 @@ body {
     grid-template-columns: 1fr; /* móvil: 1 columna */
 }
 
-/* Tablets */
-@media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.grid section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
 }
 
-/* pc */
-@media (min-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+/* Logos  50%  */
+.grid section img {
+  width: 50%;          /* 50% width container */
+  max-height: 80px;    
+  object-fit: contain; /* prevents deformation */
+  margin: 0 auto;
+  display: block;
 }
+
 
 
 
@@ -96,7 +100,7 @@ section a:hover {
   text-align: left;
 }
 
-/* Dirección y teléfono */
+/* Adress and phone */
 .list section p {
   margin: 0;
   text-align: left;
