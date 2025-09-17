@@ -21,6 +21,7 @@
 
             // Update the displayed static values (optional, but good for consistency)
             document.getElementById('display-temp').textContent = staticTemperature;
+            document.getElementById('display-temp2').textContent = staticTemperature;
             document.getElementById('display-wind-speed').textContent = staticWindSpeed;
 
             // Calculate the windchill factor
