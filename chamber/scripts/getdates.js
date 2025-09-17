@@ -19,4 +19,4 @@ medium.innerHTML = `Last Modification:  ${new Intl.DateTimeFormat(
 	}
 ).format(today)}`;
 
-year.innerHTML = ` ${today.getFullYear()}&copy; Erika Fabiola Sánchez Solano  Mérida Yuc. México.`;
+year.innerHTML = ` ${today.getFullYear()}&copy; Mérida Chamber of Commerce`;

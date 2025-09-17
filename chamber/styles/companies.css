@@ -1,0 +1,108 @@
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr; /* móvil: 1 columna */
+}
+
+
+
+section {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #eee;
+    border: 1px solid rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section img {
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+section h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #30405b;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+section p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.3rem 0;
+    text-align: center;
+}
+
+section a {
+    color: #0f7cab;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* ====== LIST VIEW (tabla estilo filas) ====== */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list section {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr; /* nombre | dirección | teléfono | link */
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  background-color: #f5fafa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Nombre */
+.list section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #30405b;
+  margin: 0;
+  text-align: left;
+}
+
+/* Dirección y teléfono */
+.list section p {
+  margin: 0;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Link */
+.list section a {
+  color: #0f7cab;
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-word; 
+}
+
+.list section a:hover {
+  text-decoration: underline;
+}
+
+/* Logo off*/
+.list section img {
+  display: none;
+}
