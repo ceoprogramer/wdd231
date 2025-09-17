@@ -64,6 +64,5 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsContainer.classList.remove("grid");
     });
 
-   
     getCompanyData(url);
 });

@@ -9,6 +9,20 @@ body {
     grid-template-columns: 1fr; /* móvil: 1 columna */
 }
 
+/* Tablets */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 
 section {
@@ -64,7 +78,7 @@ section a:hover {
 
 .list section {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1fr; /* nombre | dirección | teléfono | link */
+  grid-template-columns: 1fr 2fr 1fr 1fr; /* name | adress | phone | link */
   align-items: center;
   gap: 1rem;
   padding: 0.8rem 1rem;
@@ -95,7 +109,7 @@ section a:hover {
   color: #0f7cab;
   text-decoration: none;
   font-weight: 500;
-  word-break: break-word; 
+  word-break: break-word; /* por si el link es largo */
 }
 
 .list section a:hover {
