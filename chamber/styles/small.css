@@ -22,8 +22,7 @@ h2 {
 }
 h3 {
 	font-size: 0.8rem;	
-    color: #858789;
-	padding: 1rem;	
+    color: #7b7e81;
 	text-align: left;
 	font-family: Acme, sans-serif;
 }
@@ -184,16 +183,16 @@ nav a:hover {
 }
 
 .menu {
-	margin: 1rem auto;
-	padding: 0.5rem;
-	background-color: #2f4964;
-	text-align: center;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: #2f4964;
+    text-align: center;
+}
 
-	button {
-		padding: 0.5rem 1rem;
-		font-weight: 700;
-        background-color: #ffffff;
-	}
+.menu button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    background-color: #ffffff;
 }
 
 /****/
