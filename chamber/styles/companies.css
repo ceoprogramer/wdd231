@@ -73,7 +73,7 @@ section a:hover {
     text-decoration: underline;
 }
 
-/* ====== LIST VIEW (tabla estilo filas) ====== */
+/* ====== LIST VIEW (Table List style) ====== */
 .list {
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@ section a:hover {
   color: #0f7cab;
   text-decoration: none;
   font-weight: 500;
-  word-break: break-word; /* por si el link es largo */
+  word-break: break-word; 
 }
 
 .list section a:hover {
