@@ -1,8 +1,6 @@
 /**
  * getdates.js
- *
  * This JavaScript update cuurent year and last modification date and display in footer
- *
  */
 // select the DOM elements for output
 
@@ -19,4 +17,4 @@ medium.innerHTML = `Last Modification:  ${new Intl.DateTimeFormat(
 	}
 ).format(today)}`;
 
-year.innerHTML = ` ${today.getFullYear()}&copy; Mérida Chamber of Commerce`;
+year.innerHTML = ` ${today.getFullYear()}&copy; Timbuktu Chamber of Commerce`;
