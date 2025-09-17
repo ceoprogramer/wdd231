@@ -23,6 +23,7 @@
             document.getElementById('display-temp').textContent = staticTemperature;
             document.getElementById('display-temp2').textContent = staticTemperature;
             document.getElementById('display-wind-speed').textContent = staticWindSpeed;
+            document.getElementById('display-wind-speed2').textContent = staticWindSpeed;
 
             // Calculate the windchill factor
             const windchill = calculateWindChill(staticTemperature, staticWindSpeed);
