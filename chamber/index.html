@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="This page is about a directory of the chamber of commerce of Mérida">
+    <meta name="author" content="Fabiola Sánchez">
+    <meta property="og:title" content="Directory of the chamber of commerce of Mérida.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ceoprogramer.github.io/wdd231/chamber">
+    <meta property="og:image" content="https://ceoprogramer.github.io/wdd231/chamber/images/logochamber.png">
+    <meta property="og:description" content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+     <link rel="stylesheet" href="styles/companies.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/weather.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="scripts/companies.js"></script>
+
+    <script type="module">
+        import { displayFeaturedMembers } from "./scripts/companies.js";
+        document.addEventListener("DOMContentLoaded", () => {
+            displayFeaturedMembers();
+        });
+    </script>
+
+
+</head>
+    <body>
+        <header>
+            <img src="images/logo.png" alt="site logo" width ="512" height="512">
+             Mérida Chamber of Commerce
+            <button id ="ham-btn" class="hamburger"></button> 
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <main> 
+            <section class="hero">
+                <div class="hero-content">
+                    
+                    <h1>Welcome! </h1>
+                    
+                    <h2>Mérida Chamber of Commerce.</h2>
+                    <a href="directory.html" class="btn btn-primary">Join us</a>
+                    <a href="#" class="btn btn-primary">Contac US</a>
+                </div>
+            </section>
+
+
+
+            <h1>Mérida Chamber of Commerce Directory</h1>
+           
+            <section class="content-grid">
+                
+                <div  class="about-me-card">
+                   <h2>Events</h2>
+                    <div class="card-content">
+                        <div class="text-content">
+                          
+                        </div>    
+                        
+                    </div>   
+                
+                </div>
+                <div  class="about-me-card">
+                    <h2>Current weather</h2>
+                    <div class="card-content">
+                         <div class="weather-icon">
+                            <img src="images/weather_icon.svg" alt="weather icon">
+                         </div>
+                            <div class="text-gray-700 text-lg mb-4">
+                                <p>Temperature: <span id="display-temp">--</span>&deg;F</p>
+                                <p>Wind Speed: <span id="display-wind-speed">--</span> mph</p>
+                                <p>Conditions: <span id="display-conditions">--</span></p>
+                            </div>
+                    </div>     
+                
+                </div>
+                <div class="about-me-card">
+                    <h2>Weather Forecast</h2>
+                    <div class="card-content">
+                        <div class="text-gray-700 text-lg mb-4">
+                            <p>Today:<span id="forecast-today-temp">--</span>&deg;F</p>
+                            <p>Wednesday:<span id="forecast-wednesday-temp">--</span>&deg;F</p>
+                            <p>Thursday:<span id="forecast-thursday-temp">--</span>&deg;F</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>  
+
+            <section>
+                <h2>Companies Directory</h2>
+                <div class="menu">
+                    <button id="grid">Grid</button>
+                    <button id="list">List</button>
+                </div>
+                <div id="cards" class="grid"></div>
+            </section>        
+
+        </main>
+        <footer> 
+            <div class="footer-container">
+                <div class="columna-1">
+                    <h3>Mérida Chamber of Commerce</h3>
+                    <h3>10 Francisco de Montejo #22</h3>
+                    <h3>Mérida, Yucatán</h3>
+                    <h3>info@meridachamber.org</h3>
+                    <h3>(999) 555-2300</h3>
+                </div>
+
+                <div class="columna-2">
+                    <div class="social">
+                        <a href="#" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="32" height="32"></a>
+                        <a href="#" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="32" height="32"></a>
+                        <a href="#" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+                    </div>
+                </div>
+                <div class="columna-3">
+                    <h3>WDD231 Class Project</h3>
+                    <h3>Fabiola Sánchez</h3>
+                    <h3 id="year"></h3>
+                    <h3 id="medium"></h3>
+                </div>
+
+            </div>
+
+            
+        </footer>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        
+    </body>
+</html>

@@ -1,0 +1,94 @@
+{
+  "companies": [
+    {
+      "name": "Computing & Systems",
+      "address": "132 Maple St Frostburg",
+      "phone": "(235)3455887",
+      "url": "www.compusys.com",
+      "id": 1,
+      "sector": "Consulting",
+      "level": 1,
+      "imageurl": "images/img1.png"
+    },
+    {
+      "name": "Financial Consulting",
+      "address": "6200 S WOODWIND Floral City FL 34436-2042 USA",
+      "phone": "(305)4465511",
+      "url": "www.financial-consulting.com",
+      "id": 2,
+      "sector": "Consulting",
+      "level": 1,
+      "imageurl": "images/img2.png"
+    },
+    {
+      "name": "IATA Logistic",
+      "address": "601 Indian Rocks BELLEAIR FL USA",
+      "phone": "(305)8755412",
+      "url": "www.iata.com",
+      "id": 3,
+      "sector": "Logistic",
+      "level": 1,
+      "imageurl": "images/img3.png"
+    },
+    {
+      "name": "Auto Accessories",
+      "address": "2375 Pennsylvania Av. NW, 20037 Washington DC",
+      "phone": "(202)4520100",
+      "url": "www.autocar.com",
+      "id": 4,
+      "sector": "Autos",
+      "level": 3,
+      "imageurl": "images/img4.png"
+    },
+    {
+      "name": "Car Wash",
+      "address": "31 St. James Avenue, Suite 905, Boston, MA 02116",
+      "phone": "(617)5362506",
+      "url": "www.autocar.com",
+      "id": 5,
+      "sector": "Autos",
+      "level": 3,
+      "imageurl": "images/img5.png"
+    },
+    {
+      "name": "Construction Company",
+      "address": "180 North Michigan Ave., Suite 1500, Chicago, IL 60611",
+      "phone": "(312)782-4588",
+      "url": "www.ccc.com",
+      "id": 6,
+      "sector": "Construction",
+      "level": 1,
+      "imageurl": "images/img6.png"
+    },
+    {
+      "name": "All sports",
+      "address": "2655 Le Jeune Road, Suite 203, Miami, FL 33134",
+      "phone": "(305)446-5511",
+      "url": "www.allsports.com",
+      "id": 7,
+      "sector": "Sports",
+      "level": 2,
+      "imageurl": "images/img7.png"
+    },
+    {
+      "name": "Himalaya Herbals",
+      "address": "1405 Sutter St, San Francisco, CA 94109",
+      "phone": "(415)9222995",
+      "url": "www.himalaya.com",
+      "id": 8,
+      "sector": "Health",
+      "level": 2,
+      "imageurl": "images/img8.png"
+    },
+    {
+      "name": "Scape Travels",
+      "address": "5055 Wilshire Blvd., Suite 960, Los Angeles, CA 90036",
+      "phone": "(213)938-0166",
+      "url": "www.scape-travel.com",
+      "id": 9,
+      "sector": "Travel Agency",
+      "level": 2,
+      "imageurl": "images/img9.png"
+    }
+  ]
+}

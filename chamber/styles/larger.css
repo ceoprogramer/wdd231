@@ -47,6 +47,16 @@
     }
 }
 
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh; /* */
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+}
+
 
 
 /* Tablets */

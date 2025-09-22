@@ -1,0 +1,88 @@
+@media only screen and (min-width: 38rem){
+    header, main, nav, footer{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    header{
+        grid-template-columns: 24px auto;
+        }
+    .hamburger {
+        display:none;
+    }  
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    } 
+    
+    .navigation ul{
+        display: flex;
+    }
+    navigation a{
+        border:none;
+    }
+
+}
+
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: larger;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh; /* */
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+}
+
+
+
+/* Tablets */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; 
+    align-items: center;    
+  }
+
+  .columna-1, .columna-2, .columna-3 {
+    flex-basis: 100%;       
+    margin-bottom: 20px;    
+    text-align: center;
+  }
+}

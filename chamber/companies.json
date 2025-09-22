@@ -7,7 +7,7 @@
       "url": "www.compusys.com",
       "id": 1,
       "sector": "Consulting",
-      "level": 1,
+      "membershipLevel": 1,
       "imageurl": "images/img1.png"
     },
     {
@@ -17,7 +17,7 @@
       "url": "www.financial-consulting.com",
       "id": 2,
       "sector": "Consulting",
-      "level": 1,
+      "membershipLevel": 1,
       "imageurl": "images/img2.png"
     },
     {
@@ -27,7 +27,7 @@
       "url": "www.iata.com",
       "id": 3,
       "sector": "Logistic",
-      "level": 1,
+      "membershipLevel": 1,
       "imageurl": "images/img3.png"
     },
     {
@@ -37,7 +37,7 @@
       "url": "www.autocar.com",
       "id": 4,
       "sector": "Autos",
-      "level": 3,
+      "membershipLevel": 3,
       "imageurl": "images/img4.png"
     },
     {
@@ -47,7 +47,7 @@
       "url": "www.autocar.com",
       "id": 5,
       "sector": "Autos",
-      "level": 3,
+      "membershipLevel": 3,
       "imageurl": "images/img5.png"
     },
     {
@@ -57,7 +57,7 @@
       "url": "www.ccc.com",
       "id": 6,
       "sector": "Construction",
-      "level": 1,
+      "membershipLevel": 1,
       "imageurl": "images/img6.png"
     },
     {
@@ -67,7 +67,7 @@
       "url": "www.allsports.com",
       "id": 7,
       "sector": "Sports",
-      "level": 2,
+      "membershipLevel": 2,
       "imageurl": "images/img7.png"
     },
     {
@@ -77,7 +77,7 @@
       "url": "www.himalaya.com",
       "id": 8,
       "sector": "Health",
-      "level": 2,
+      "membershipLevel": 2,
       "imageurl": "images/img8.png"
     },
     {
@@ -87,7 +87,7 @@
       "url": "www.scape-travel.com",
       "id": 9,
       "sector": "Travel Agency",
-      "level": 2,
+      "membershipLevel": 2,
       "imageurl": "images/img9.png"
     }
   ]

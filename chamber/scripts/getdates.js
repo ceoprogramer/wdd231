@@ -17,4 +17,4 @@ medium.innerHTML = `Last Modification:  ${new Intl.DateTimeFormat(
 	}
 ).format(today)}`;
 
-year.innerHTML = ` ${today.getFullYear()}&copy; Timbuktu Chamber of Commerce`;
+year.innerHTML = ` ${today.getFullYear()}&copy; Mérida Chamber of Commerce`;

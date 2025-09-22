@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber-Directory</title>
+    <title>Mérida Chamber-Directory</title>
     <meta name="description" content="This page is about a directory of the chamber of commerce of Timbuktu">
     <meta name="author" content="Fabiola Sánchez">
     <meta property="og:title" content="Directory of the chamber of commerce of Timbuktu.">
@@ -23,68 +23,33 @@
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/place.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="scripts/companies.js" defer></script>
+    <script type="module" src="scripts/companies.js"></script>
+    <script type="module">
+        import { displayAllMembers } from "./scripts/companies.js";
+        document.addEventListener("DOMContentLoaded", () => {
+            displayAllMembers();
+        });
+    </script>
 
 
 </head>
     <body>
         <header>
             <img src="images/logo.png" alt="site logo" width ="512" height="512">
-             Timbuktu Chamber of Commerce
+             Mérida Chamber of Commerce
             <button id ="ham-btn" class="hamburger"></button> 
         </header>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="#">Home</a></li>
-                <li><a href="#">Directory</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
         <main> 
-            <h1>Timbuktu Chamber of Commerce Directory</h1>
-           
-            <section class="content-grid">
-                
-                <div  class="about-me-card">
-                   <h2>Events</h2>
-                    <div class="card-content">
-                        <div class="text-content">
-                          
-                        </div>    
-                        
-                    </div>   
-                
-                </div>
-                <div  class="about-me-card">
-                    <h2>Current weather</h2>
-                    <div class="card-content">
-                         <div class="weather-icon">
-                            <img src="images/weather_icon.svg" alt="weather icon">
-                         </div>
-
-                            <div class="text-gray-700 text-lg mb-4">
-                                <p>Temperature: <span id="display-temp">--</span>&deg;F</p>
-                                <p>Wind Speed: <span id="display-wind-speed">--</span> mph</p>
-                                <p>Conditions: <span id="display-conditions">--</span></p>
-                            </div>
-                    </div>     
-                
-                </div>
-                <div  class="about-me-card">
-                    <h2>Weather Forecast</h2>
-                    <div class="card-content">
-                         <div class="text-gray-700 text-lg mb-4">
-                                <p>Today: <span id="display-temp2">--</span>&deg;F</p>
-                                <p>Wendsday: <span id="display-wind-speed2">--</span> mph</p>
-                                <p>Thursday: <span id="display-conditions2">--</span></p>
-                         </div>
-                    </div>     
-                
-                </div>
-
-            </section>  
-
+            <h1>Mérida Chamber of Commerce Directory</h1>
+       
             <section>
                 <h2>Companies Directory</h2>
                 <div class="menu">
