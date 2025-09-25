@@ -1,0 +1,397 @@
+/********** SITE WIDE*****/
+* {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+h1 {
+    margin: 1rem 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+	font-weight: 700;
+	background-color: rgb(70 83 107 / 50%);
+	padding: 1rem;
+	border: 1px solid rgb(0 0 0 / 10%);
+	text-align: center;
+	font-family: Acme, sans-serif;
+}
+h2 {
+	font-size: 1rem;
+	font-weight: 500;
+	background-color: rgb(70 83 107 / 100%);
+    color: #fff;
+	padding: 1rem;
+	border: 1px solid rgb(0 0 0 / 10%);
+	text-align: center;
+	font-family: Acme, sans-serif;
+}
+
+/****HEADER***/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    align-items:end;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+header span{
+    font-size: 1.2rem;
+    color: #304058;
+}
+
+/******** Hamburger Navigation********/
+.hamburger {
+    background: none;
+    border: none;
+    color: #304058;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hamburger::before{
+    content: "\2630";
+   
+
+}
+.hamburger.show::before{
+    content: "\00D7";
+
+}
+
+/****************NAVIGATION***********/
+.navigation {
+  display: none;
+}
+.navigation.show {
+  display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav {
+    background-color: rgb(70 83 107 / 100%);
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+nav a:hover {
+    background-color: #E0745F;
+}
+
+
+
+
+p {
+	
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
+}
+
+/*********Footer ******/
+footer{
+    background-color:#eee;
+    padding: 1rem 10px;
+    text-align: center;
+    font-size: 0.7rem;
+
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img{
+    width: 22px;
+    height: 22px;
+
+}
+.social a:hover{
+    background-color:#ddd;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Column bigger for "About Me", other for "Resources" one column for movil */
+    gap: 1.5rem; /* space bettwen cards */
+    padding: 1.5rem;
+    max-width: 1200px; 
+    margin: 1.5rem auto; /* center grid */
+}
+.about-me-card, .resources-card {
+    display: flex;
+    flex-direction: column; /* title and content */
+    background-color: #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    min-height: 400px; 
+   
+    
+}
+
+.about-me-card h2, .resources-card h2 {
+    background-color: rgb(70 83 107 / 100%); /* Cards Titles Backgroud */
+    color: #fff;
+    padding: 0.8rem 1rem;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem; /* Expand Title Background */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Content "About Me" Card (Grid image and Text) */
+.about-me-card .card-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Text Bigger than image */
+    gap: 1.5rem;
+}
+
+.about-me-card .text-content {
+   text-align: left;
+}
+
+.about-me-card .text-content p {
+    margin-bottom: 1rem;
+}
+
+
+.about-me-card .text-content h3 {
+    color: var(--text-color); /* H3 into card */
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+}
+
+.about-me-card .image-content {
+    text-align: center;
+}
+
+.about-me-card .card-content-inter {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* image Bigger than text */
+    gap: 1.5rem;
+}
+.card-content-inter .image-content {
+    text-align: left;
+}
+.card-content-inter .text-content {
+   text-align: justify;
+}
+
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* profile borders */
+    border: 1px solid var(--border-color); /* ligth border */
+}
+
+
+/* Styles for filter buttons */
+.course-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.course-buttons button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.course-buttons button:hover, .course-buttons button.active {
+    background-color: #E0745F;
+    color: #fff;
+}
+
+/* Styles for cards courses */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 5px solid #ccc; /* Borde por defecto */
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles for completed courses */
+.completed {
+    background-color: #f9f9e5; 
+    border-left: 5px solid #28a745; 
+    position: relative;
+}
+
+.completed::after {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #28a745;
+}
+
+.course-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+
+.key {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 0.5rem;
+	background-color: black;
+	color: white;
+	display: grid;
+	grid-template-columns: 0.8rem 1fr;
+	grid-gap: 0.25rem;
+}
+
+#keytitle {
+	font-size: larger;
+	grid-column: 1 / 3;
+}
+
+.key > div {
+	width: 0.75rem;
+	height: 0.75rem;
+	border: 1px solid #bbb;
+}
+
+
+
+
+.grid {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: #eee;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+
+img {
+	width: auto;
+	max-width: 325px;
+	box-shadow: 0 0 30px #777;
+	height: 200px;
+	border: 1px solid #111;
+}
+
+
+li > img {
+	width: auto;
+	height: 30px;
+}
+
+.caption {
+	position: absolute;
+	top: 1.5rem;
+	right: 2rem;
+	border: 1px solid #ccc;
+	background-color: lightyellow;
+	padding: 0.25rem;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1rem 1fr;
+}
+
+.un {
+	list-style: none;
+}
+
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+}

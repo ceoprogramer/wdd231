@@ -1,5 +1,3 @@
-// JavaScript to manage of modal functionality and courses
-
 const courses = [
     {
         subject: 'CSE',
@@ -78,15 +76,18 @@ const courses = [
         ],
         completed: false
     }
-];
+]
+
+
 
 const navbutton = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
 
-navbutton.addEventListener('click', () => {
+navbutton.addEventListener('click',() =>{
     navbutton.classList.toggle('show');
-    navBar.classList.toggle('show');
+    navBar.classList.toggle('show');  
 });
+
 
 /**-Filters------- */
 // 
@@ -95,29 +96,24 @@ const allBtn = document.querySelector('#all-courses');
 const wddBtn = document.querySelector('#wdd-courses');
 const cseBtn = document.querySelector('#cse-courses');
 const totalCreditsSpan = document.querySelector('#total-credits');
-const courseDetails = document.querySelector('#course-details');
 
-
-// Render courses
+// Funtion to render courses on page 
 function renderCourses(filteredCourses) {
-    // Clear exist content
+    // 
     courseList.innerHTML = '';
 
-    // Iterar and create the html for every course
+    // Iterar filter and create html
     filteredCourses.forEach(course => {
         const courseCard = document.createElement('div');
-        // use a data atribute to storage the subject y number
-        courseCard.setAttribute('data-subject', course.subject);
-        courseCard.setAttribute('data-number', course.number);
-
+        // use template
         courseCard.innerHTML = `
             <h3>${course.subject} ${course.number}</h3>
             <p>${course.title}</p>
             <p>Credits: ${course.credits}</p>
         `;
         courseCard.classList.add('course-card');
-
-        // Add 'completed course' if course is full
+        
+        // 
         if (course.completed) {
             courseCard.classList.add('completed');
         }
@@ -125,23 +121,25 @@ function renderCourses(filteredCourses) {
         courseList.appendChild(courseCard);
     });
 
+    
     updateTotalCredits(filteredCourses);
 }
 
-// Calc and show total credits 
+// Funtion to calc and show total credits
 function updateTotalCredits(filteredCourses) {
+    //
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsSpan.textContent = totalCredits;
 }
 
-// Act Selected button
+// 
 function setActiveButton(activeButton) {
     const buttons = [allBtn, wddBtn, cseBtn];
     buttons.forEach(btn => btn.classList.remove('active'));
     activeButton.classList.add('active');
 }
 
-// clc events to filter buttons 
+// 
 allBtn.addEventListener('click', () => {
     renderCourses(courses);
     setActiveButton(allBtn);
@@ -163,46 +161,4 @@ cseBtn.addEventListener('click', () => {
 window.addEventListener('load', () => {
     renderCourses(courses);
     setActiveButton(allBtn);
-});
-
-
-// Function to show modal window with course detail 
-function displayCourseDetails(course) {
-    courseDetails.innerHTML = `
-        <button id="closeModal">❌</button>
-        <h2>${course.subject} ${course.number}</h2>
-        <h3>${course.title}</h3>
-        <p><strong>Credits</strong>: ${course.credits}</p>
-        <p><strong>Certificate</strong>: ${course.certificate}</p>
-        <p>${course.description}</p>
-        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
-    `;
-    courseDetails.showModal();
-
-    // Evento de clic para cerrar el modal
-    const closeModal = document.querySelector("#closeModal");
-    closeModal.addEventListener("click", () => {
-        courseDetails.close();
-    });
-}
-
-
-// AHORA ADJUNTAMOS EL EVENTO DE CLIC AL CONTENEDOR DE CURSOS PARA USAR DELEGACIÓN DE EVENTOS
-courseList.addEventListener('click', (event) => {
-    // Encontrar la tarjeta de curso en la que se hizo clic
-    const courseCard = event.target.closest('.course-card');
-    
-    // Si se hizo clic en una tarjeta, obtener sus datos y mostrar el modal
-    if (courseCard) {
-        // Obtener el subject y number del atributo de datos
-        const subject = courseCard.getAttribute('data-subject');
-        const number = parseInt(courseCard.getAttribute('data-number'));
-        
-        // Buscar el curso correspondiente en el array 'courses'
-        const selectedCourse = courses.find(course => course.subject === subject && course.number === number);
-        
-        if (selectedCourse) {
-            displayCourseDetails(selectedCourse);
-        }
-    }
 });

@@ -46,3 +46,17 @@
         grid-template-columns: 2fr 1fr;
     }
 }
+
+/* Tablets */
+@media (min-width: 768px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
