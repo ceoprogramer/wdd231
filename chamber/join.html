@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mérida Chamber-Directory</title>
-    <meta name="description" content="This page is about a directory of the  Mérida Chamber of Commerce">
+    <meta name="description" content="This page is about a form to become a member of Mérida Chamber of Commerce">
     <meta name="author" content="Fabiola Sánchez">
-    <meta property="og:title" content="Directory of the Mérida chamber of commerce.">
+    <meta property="og:title" content="join to become member of Mérida Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ceoprogramer.github.io/wdd231/chamber">
     <meta property="og:image" content="https://ceoprogramer.github.io/wdd231/chamber/images/logochamber.png">
-    <meta property="og:description" content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta property="og:description" content="This page provides a form to become a member of Mérida Chamber of commerce.">
     <meta property="og:locale" content="en_US">
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -24,13 +24,6 @@
     <script src="scripts/place.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="scripts/companies.js"></script>
-    <script type="module">
-        import { displayAllMembers } from "./scripts/companies.js";
-        document.addEventListener("DOMContentLoaded", () => {
-            displayAllMembers();
-        });
-    </script>
-
 
 </head>
     <body>
@@ -50,14 +43,7 @@
         <main> 
             <h1>Mérida Chamber of Commerce Directory</h1>
        
-            <section>
-                <h2>Companies Directory</h2>
-                <div class="menu">
-                    <button id="grid">Grid</button>
-                    <button id="list">List</button>
-                </div>
-                <div id="cards" class="grid"></div>
-            </section>        
+     
 
         </main>
         <footer> 
@@ -84,9 +70,12 @@
                     <h3 id="medium"></h3>
                 </div>
 
-            </div>  
+            </div>
+
+            
         </footer>
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
+        
     </body>
 </html>
