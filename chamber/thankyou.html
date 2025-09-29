@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merida Chamber of Commerce</title>
+    <meta name="description" content="This page is about the Thankyou of the chamber of commerce of Mérida">
+    <meta name="author" content="Fabiola Sánchez">
+    <meta property="og:title" content="Website of the chamber of commerce of Mérida.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ceoprogramer.github.io/wdd231/chamber">
+    <meta property="og:image" content="https://ceoprogramer.github.io/wdd231/chamber/images/logochamber.png">
+    <meta property="og:description" content="This page provides the form result in join in page Thankyou chamber of commerce.">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+     <link rel="stylesheet" href="styles/companies.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    
+   
+   
+
+</head>
+    <body>
+        <header>
+            <img src="images/logo.png" alt="site logo" width ="512" height="512">
+             Mérida Chamber of Commerce
+            <button id ="ham-btn" class="hamburger"></button> 
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <main> 
+            <h1>Thank You for Joining!</h1>
+            <div class="container">
+                <!-- Left side: message -->
+                <div class="message-box">
+                <p>We appreciate your interest in joining our Chamber of Commerce.  
+                Your application has been successfully submitted, and we will be in touch soon with the next steps.</p>
+                <p>Meanwhile, here’s a summary of the information you provided:</p>
+                </div>
+
+                <!-- Right side: submitted data -->
+                <div class="summary-box">
+                <h2>Submitted Information</h2>
+                <p><strong>First Name:</strong> <span id="out-firstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="out-lastName"></span></p>
+                <p><strong>Email:</strong> <span id="out-email"></span></p>
+                <p><strong>Mobile:</strong> <span id="out-mobile"></span></p>
+                <p><strong>Organization:</strong> <span id="out-organization"></span></p>
+                <p><strong>Membership Level:</strong> <span id="out-membership"></span></p>
+                <p><strong>Submitted On:</strong> <span id="out-timestamp"></span></p>
+                </div>
+            </div>
+        </main>
+        <br>
+        <footer> 
+            <div class="footer-container">
+                <div class="columna-1">
+                    <p>Mérida Chamber of Commerce</p>
+                    <p>10 Francisco de Montejo #22</p>
+                    <p>Mérida, Yucatán</p>
+                    <p>info@meridachamber.org</p>
+                    <p>(999) 555-2300</p>
+                </div>
+
+                <div class="columna-2">
+                    <div class="social">
+                        <a href="#" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="32" height="32"></a>
+                        <a href="#" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="32" height="32"></a>
+                        <a href="#" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+                    </div>
+                </div>
+                <div class="columna-3">
+                    <p>WDD231 Class Project</p>
+                    <p>Fabiola Sánchez</p>
+                    <p id="year"></p>
+                    <p id="medium"></p>
+                </div>
+
+            </div>
+
+            
+        </footer>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+    </body>
+</html>

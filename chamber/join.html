@@ -22,6 +22,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/place.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="scripts/companies.js"></script>
 
@@ -41,19 +44,122 @@
             </ul>
         </nav>
         <main> 
-            <h1>Mérida Chamber of Commerce Directory</h1>
-       
-     
+            <h1>Become a member</h1>
+            <h2>Would you like to become member of this chamber, please fill this form</h2>
+            <div class="container">
+                <!-- FORM -->
+                    <form method="get" action="thankyou.html">
+                        <h3>Membership Application Form</h3>
+
+                        <label>
+                            First Name:
+                            <input type="text" name="firstName" required title="Enter your first name" autocomplete="given-name">
+                        </label>
+
+                        <label>
+                            Last Name:
+                            <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name">
+                        </label>
+
+                        <label>
+                            Title:
+                            <input type="text" name="orgTitle" title="Your organizational title" autocomplete="organization-title"
+                            pattern="[A-Za-z\\-\\s]{7,}">
+                        </label>
+
+                        <label>
+                            Email:
+                            <input type="email" name="email" required title="Enter your email address" 
+                            autocomplete="email" placeholder="example@domain.com">
+                        </label>
+
+                        <label>
+                            Cell Phone:
+                            <input type="tel" name="mobile" required title="Enter your mobile number" autocomplete="tel">
+                        </label>
+
+                        <label>
+                            Organization:
+                            <input type="text" name="organization" required title="Enter your organization name" autocomplete="organization">
+                        </label>
+
+                        <label>
+                            Membership Level:
+                            <select name="membership" title="Select your membership level">
+                            <option value="np">Non Profit Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Business Description:
+                            <textarea name="description" title="Describe your organization"></textarea>
+                        </label>
+
+                        <!-- Timestamp -->
+                        <input type="hidden" name="timestamp" id="timestamp">
+                        <input class="button" type="submit" value="Submit Application">
+                    </form>
+
+                    <!-- MEMBERSHIP CARDS -->
+                    <div class="membership-cards">
+                        <h3>Membership Levels</h3>
+                        <div class="card">
+                            <h4>Non Profit Membership Level</h4>
+                            <button type="button" onclick="document.getElementById('dialog-np').showModal()">Learn More</button>
+                        </div>
+                        <div class="card">
+                            <h4>Bronze Membership Level</h4>
+                            <button type="button" onclick="document.getElementById('dialog-bronze').showModal()">Learn More</button>
+                        </div>
+                        <div class="card">
+                            <h4>Silver Membership Level</h4>
+                            <button type="button" onclick="document.getElementById('dialog-silver').showModal()">Learn More</button>
+                        </div>
+                        <div class="card">
+                            <h4>Gold Membership Level</h4>
+                            <button type="button" onclick="document.getElementById('dialog-gold').showModal()">Learn More</button>
+                        </div>
+                    </div>
+            </div>
+
+                <!-- DIALOG WINDOWS -->
+                <dialog id="dialog-np">
+                    <h3>NP Membership</h3>
+                    <p>For non-profits, free membership with access to networking events and community support.</p>
+                    <button class="close-btn" onclick="this.closest('dialog').close()">Close</button>
+                </dialog>
+
+                <dialog id="dialog-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Affordable option for small businesses. Includes event invitations and a listing in our directory.</p>
+                    <button class="close-btn" onclick="this.closest('dialog').close()">Close</button>
+                </dialog>
+
+                <dialog id="dialog-silver">
+                    <h3>Silver Membership</h3>
+                    <p>Includes all Bronze benefits plus advertising discounts and enhanced visibility in community events.</p>
+                    <button class="close-btn" onclick="this.closest('dialog').close()">Close</button>
+                </dialog>
+
+                <dialog id="dialog-gold">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits including priority event sponsorship, maximum visibility, and premium networking.</p>
+                    <button class="close-btn" onclick="this.closest('dialog').close()">Close</button>
+                </dialog>
 
         </main>
+        <br>
         <footer> 
             <div class="footer-container">
                 <div class="columna-1">
-                    <h3>Mérida Chamber of Commerce</h3>
-                    <h3>10 Francisco de Montejo #22</h3>
-                    <h3>Mérida, Yucatán</h3>
-                    <h3>info@meridachamber.org</h3>
-                    <h3>(999) 555-2300</h3>
+                    <p>Mérida Chamber of Commerce</p>
+                    <p>10 Francisco de Montejo #22</p>
+                    <p>Mérida, Yucatán</p>
+                    <p>info@meridachamber.org</p>
+                    <p>(999) 555-2300</p>
                 </div>
 
                 <div class="columna-2">
@@ -64,18 +170,16 @@
                     </div>
                 </div>
                 <div class="columna-3">
-                    <h3>WDD231 Class Project</h3>
-                    <h3>Fabiola Sánchez</h3>
-                    <h3 id="year"></h3>
-                    <h3 id="medium"></h3>
+                    <p>WDD231 Class Project</p>
+                    <p>Fabiola Sánchez</p>
+                    <p id="year"></p>
+                    <p id="medium"></p>
                 </div>
-
-            </div>
-
-            
+            </div>  
         </footer>
-        <script src="scripts/navigation.js" defer></script>
-        <script src="scripts/getdates.js" defer></script>
+        <br>
+
+        
         
     </body>
 </html>

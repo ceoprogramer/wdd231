@@ -4,26 +4,37 @@
 }
 h1 {
     margin: 1rem 10px;
-    color: #30405b;
-    font-size: 2rem;
+    color: #0f76a2;
+    font-size: 2.2rem;
 	font-weight: 600;
 	padding: 1rem;
 	text-align: center;
 	font-family: Acme, sans-serif;
 }
 h2 {
-	font-size: 1.5rem;
-	font-weight: 600;
-    color: #30405b;
+	font-size: 1.3rem;
+	font-weight: 500;
+    color: #ff9849;
 	padding: 1rem;
 	border: 1px solid rgb(0 0 0 / 10%);
 	text-align: center;
+    font-weight: bold;
 	font-family: Acme, sans-serif;
 }
+
 h3 {
-	font-size: 0.8rem;	
-    color: #7b7e81;
+	font-size: 1.2rem;	
+    color: #59595a;
+    padding-bottom: 1rem;
 	text-align: left;
+	font-family: Acme, sans-serif;
+}
+
+h4 {
+	font-size: 1.2rem;	
+    color: #0f76a2;
+    padding-bottom: 1rem;
+	text-align: center;
 	font-family: Acme, sans-serif;
 }
 
@@ -90,7 +101,7 @@ header span{
 
 
 nav {
-    background-color: rgb(15, 124, 171);
+    background-color: #0f7cab;
     margin: 0 auto;
     max-width: 800px;
     font-family: sans-serif;
@@ -274,7 +285,143 @@ nav a:hover {
     background-color: #ffffff;
 }
 
-/****/
+/***join****/
+
+ body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Form styling */
+    form {
+      flex: 1 1 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background: #f9f9f9;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+      color: #5d5d5d;
+      
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    /* Membership cards to the right */
+    .membership-cards {
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .card {
+      padding: 15px;
+      border: 1px solid #bbb;
+      border-radius: 10px;
+      background: #c6e2d9;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card button {
+      margin-top: 10px;
+      background: #ff9849;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .button {
+      margin-top: 10px;
+      background: #ff9849;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+
+    /* Dialog styles */
+    dialog {
+      border: none;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    dialog::backdrop {
+      background: rgba(0,0,0,0.6);
+    }
+
+    .close-btn {
+      margin-top: 15px;
+      background: #ff9849;
+      color: #fff;
+      border: none;
+      
+      padding: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /**** thankyou**/
+    .message-box {
+      flex: 1 1 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background: #f9f9f9;
+    }
+
+    .summary-box {
+      flex: 1 1 300px;
+      padding: 20px;
+      border: 1px solid #bbb;
+      border-radius: 12px;
+      background: #c6e2d9;
+    }
+
+    .summary-box h2 {
+      margin-top: 0;
+    }
+
+    .summary-box p {
+      margin: 8px 0;
+    }
+
+    strong {
+      color: #0f76a2;
+    }
+
+
 
 
 
@@ -285,10 +432,8 @@ nav a:hover {
   align-items: flex-start; 
   flex-wrap: wrap; 
   padding: 5px;
-  font-size: 0.9rem;
- 
-
- 
+  font-size: 0.8rem;
+  
 }
 
 .columna-1, .columna-2, .columna-3 {

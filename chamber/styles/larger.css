@@ -72,8 +72,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-
+    
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column; 
@@ -85,4 +84,9 @@
     margin-bottom: 20px;    
     text-align: center;
   }
+
+  .container {
+        flex-direction: column;
+   }
 }
+
