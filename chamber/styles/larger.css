@@ -1,6 +1,6 @@
-@media only screen and (min-width: 38rem){
+@media only screen and (min-width: 1024px){
     header, main, nav, footer{
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 0 auto;
     }
     
@@ -59,12 +59,7 @@
 
 
 
-/* Tablets */
-@media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+
 
 /* pc */
 @media (min-width: 1024px) {
@@ -79,7 +74,7 @@
     align-items: center;    
   }
 
-  .columna-1, .columna-2, .columna-3 {
+  .columna-1, .columna-2 {
     flex-basis: 100%;       
     margin-bottom: 20px;    
     text-align: center;
@@ -89,4 +84,19 @@
         flex-direction: column;
    }
 }
+
+/* PC (ex: min-width: 64rem o 1024px) */
+@media only screen and (min-width: 64rem) {
+    
+    #allplaces {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+   
+    main {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+} 
+
 

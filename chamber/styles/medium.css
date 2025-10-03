@@ -1,0 +1,45 @@
+
+
+/* medium.css */
+
+/* Apply styles only with widthscreen in 768px (o 38rem) until 1023px */
+@media (min-width: 768px) and (max-width: 1023px) { 
+    
+   
+    .hamburger {
+        display: none; 
+    }
+    .navigation.show, .navigation {
+        display: block; 
+    }
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation a {
+        border: none;
+    }
+
+    #allplaces {
+        grid-template-columns: 1fr; 
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .place-card {
+        display: grid;
+         grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph cost"
+            "photograph location";
+    }
+
+    .place-card img {
+        width: 100%; 
+        height: auto; 
+        
+    }
+}

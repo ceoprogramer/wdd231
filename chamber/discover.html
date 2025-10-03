@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mérida Chamber-Directory</title>
-    <meta name="description" content="This page is about a directory of the  Mérida Chamber of Commerce">
+    <title>Merida Chamber of Commerce</title>
+    <meta name="description" content="This page is about Discover around the chamber of commerce of Mérida">
     <meta name="author" content="Fabiola Sánchez">
-    <meta property="og:title" content="Directory of the Mérida chamber of commerce.">
+    <meta property="og:title" content="Website of the chamber of commerce of Mérida.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ceoprogramer.github.io/wdd231/chamber">
     <meta property="og:image" content="https://ceoprogramer.github.io/wdd231/chamber/images/logochamber.png">
-    <meta property="og:description" content="This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta property="og:description" content="This page provides info about discover around the chamber of commerce of Mérida.">
     <meta property="og:locale" content="en_US">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/place.js" defer></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="scripts/companies.js"></script>
-    <script type="module">
-        import { displayAllMembers } from "./scripts/companies.js";
-        document.addEventListener("DOMContentLoaded", () => {
-            displayAllMembers();
-        });
-    </script>
-
+    
+   
+   
 
 </head>
     <body>
@@ -46,27 +40,19 @@
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
-        <main> 
-            <h1>Mérida Chamber of Commerce Directory</h1>
-       
-            <section>
-                <h2>Companies Directory</h2>
-                <div class="menu">
-                    <button id="grid">Grid</button>
-                    <button id="list">List</button>
-                </div>
-                <div id="cards" class="grid"></div>
-            </section>        
-
-        </main>
+       <main>
+        <h1>Discover</h1>
+        <div id="allplaces"></div>
+    </main>
+        <br>
         <footer> 
             <div class="footer-container">
                 <div class="columna-1">
-                    <h3>Mérida Chamber of Commerce</h3>
-                    <h3>10 Francisco de Montejo #22</h3>
-                    <h3>Mérida, Yucatán</h3>
-                    <h3>info@meridachamber.org</h3>
-                    <h3>(999) 555-2300</h3>
+                    <p>Mérida Chamber of Commerce</p>
+                    <p>10 Francisco de Montejo #22</p>
+                    <p>Mérida, Yucatán</p>
+                    <p>info@meridachamber.org</p>
+                    <p>(999) 555-2300</p>
                 </div>
 
                 <div class="columna-2">
@@ -77,15 +63,19 @@
                     </div>
                 </div>
                 <div class="columna-3">
-                    <h3>WDD231 Class Project</h3>
-                    <h3>Fabiola Sánchez</h3>
-                    <h3 id="year"></h3>
-                    <h3 id="medium"></h3>
+                    <p>WDD231 Class Project</p>
+                    <p>Fabiola Sánchez</p>
+                    <p id="year"></p>
+                    <p id="medium"></p>
                 </div>
 
-            </div>  
+            </div>
+
+            
         </footer>
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
+        <script src ="scripts/discover.js" type = "module"></script> 
+
     </body>
 </html>
