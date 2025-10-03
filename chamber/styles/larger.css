@@ -6,7 +6,11 @@
     
     header{
         grid-template-columns: 24px auto;
-        }
+    }
+
+
+
+
     .hamburger {
         display:none;
     }  
