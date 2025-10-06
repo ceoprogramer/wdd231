@@ -1,0 +1,101 @@
+:root {
+    /* CSS HEX */
+    --honolulu: #0077B6;
+    --ligthblue: #CAF0F8;
+    --cyanligth: #4DBAC3;
+    --darkcyan: #0A9396;
+    --busyellow: #FDDB32;
+    --darkblue: #03045E;
+    --white:#FFFFFF;
+
+    --barlow-regular-font-family: "Barlow", sans-serif;
+    --barlow-regular-font-weight: 400;
+    --barlow-regular-font-style: normal;
+
+    --lato-regular-font-family: "Lato", sans-serif;
+    --lato-regular-font-weight: 400;
+    --lato-regular-font-style: normal;
+    
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    place-items: center;
+
+}
+
+h2 {
+    color: var(--penn-blue);
+}
+
+p {
+    color: var(--oxford-blue);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr; /* Column bigger for "About Me", other for "Resources" */
+    gap: 1.5rem; /* space bettwen cards */
+    padding: 1.5rem;
+    max-width: 1200px; 
+    margin: 1.5rem auto; /* center grid */
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* title and content */
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    min-height: 300px; 
+    min-width: 200px;
+    text-align: left;
+ 
+}
+
+
+.card .text-content p {
+    margin-bottom: 1rem;
+}
+
+
+.titleEx,
+.paragraphEx {
+    font-family: var(--lato-regular-font-family);
+    color: darkblue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.headfoot {
+    font-family: var(--barlow-regular-font-family);
+    color: darkblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.headerEx{
+    background-color: var(--cyanligth);
+    color: var(--white);
+    width: 300px;
+    height: 50px;
+    text-align: center;
+
+}
+.footerEx {
+    width: 300px;
+    height: 50px;
+    background-color: var(--darkcyan);
+    color: var(--white);
+    text-align: center;
+}
+
+img {
+    
+    max-width: 50%;
+    height: auto;
+
+}

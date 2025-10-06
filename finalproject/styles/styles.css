@@ -1,0 +1,65 @@
+/* Paleta de colores */
+:root {
+  --azul: #005F73;
+  --verde: #0A9396;
+  --arena: #E9D8A6;
+  --terracota: #CA6702;
+  --gris: #EDF6F9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--gris);
+  color: var(--azul);
+}
+
+header {
+  background-color: var(--azul);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--arena);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bienvenida {
+  background-color: var(--arena);
+  padding: 2rem;
+  text-align: center;
+  color: var(--azul);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--verde);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--terracota);
+  transform: scale(1.05);
+}
