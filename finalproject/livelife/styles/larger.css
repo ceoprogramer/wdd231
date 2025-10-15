@@ -1,0 +1,122 @@
+/* Responsive styles */
+@media (max-width: 768px) {
+    #hamburgerBtn {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--cyanligth);
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    nav li {
+        margin: 0;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .tour-item {
+        flex-direction: column;
+    }
+    
+    .tour-item img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+        padding: 1.5rem;
+    }
+}
+
+/* Responsive Styles for Reservations */
+@media (max-width: 768px) {
+    .reservation-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .confirmation-actions {
+        flex-direction: column;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header, footer, .reservation-sidebar, .confirmation-actions {
+        display: none !important;
+    }
+    
+    .reservation-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .confirmation-modal .modal-content {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+/* Responsive Styles for Contact Page */
+@media (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 1.5rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .hour-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .map-placeholder {
+        height: 300px;
+        padding: 1.5rem;
+    }
+    
+    .map-placeholder i {
+        font-size: 3rem;
+    }
+}
+

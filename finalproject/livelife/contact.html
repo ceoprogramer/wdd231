@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Livelife Travel Agency - We're here to help you plan your dream vacation">
+    <meta name="author" content="Fabiola Sánchez">
+    <meta property="og:title" content="Website of the LiveLife Travel Agency.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ceoprogramer.github.io/wdd231/finalproject/livelife/">
+    <meta property="og:image" content="https://ceoprogramer.github.io/wdd231/finalproject/livelife/images/logoLive-life.png">
+    <meta property="og:description" content="This site is about LiveLige Travel Agency and provides a list of touristic destinations in Europe, Asia, North America y South America.">
+    <meta property="og:locale" content="en_US">
+    <title>Contact Us | Livelife Travel Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logoLive-life.png" alt="Livelife Travel Agency Logo">
+                    <span>Livelife Travel</span>
+                </a>
+            </div>
+            <nav>
+                <button id="hamburgerBtn">&#9776;</button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="asia.html">Asia</a></li>
+                    <li><a href="europe.html">Europe</a></li>
+                    <li><a href="north-america.html">North America</a></li>
+                    <li><a href="south-america.html">South America</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>We're here to help you plan your dream vacation. Get in touch with our travel experts!</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-info-section">
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Our Office</h3>
+                        <p>123 Travel Street<br>Adventure City, AC 12345<br>United States</p>
+                        <a href="#map" class="contact-link">View on Map <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+1 (555) 123-4567</p>
+                        <p class="hours">Mon-Fri: 8:00 AM - 8:00 PM<br>Sat: 9:00 AM - 6:00 PM <br>Sun: 9:00 AM - 2:00 PM</p>
+                        <a href="tel:+15551234567" class="contact-link">Call Now <i class="fas fa-phone"></i></a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>info@livelifetravel.com<br>support@livelifetravel.com<br>reservations@livelifetravel.com</p>
+                        <a href="mailto:info@livelifetravel.com" class="contact-link">Send Email <i class="fas fa-envelope"></i></a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>+1 (555) 123-4567<br>Available 24/7 for quick queries</p>
+                        <a href="https://wa.me/15551234567" class="contact-link whatsapp-link" target="_blank">Chat on WhatsApp <i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="office-hours">
+                    <h3>Office Hours</h3>
+                    <div class="hours-grid">
+                        <div class="hour-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">8:00 AM - 8:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">9:00 AM - 2:00 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Emergency</span>
+                            <span class="time">24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h3>Our Travel Experts</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Asia & Europe Specialist</p>
+                            <span>sarah@livelifetravel.com</span>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h4>Michael Chen</h4>
+                            <p>Americas Specialist</p>
+                            <span>michael@livelifetravel.com</span>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <h4>Emily Rodriguez</h4>
+                            <p>Adventure Travel Expert</p>
+                            <span>emily@livelifetravel.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <div class="form-container">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactFirstName">First Name *</label>
+                                <input type="text" id="contactFirstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactLastName">Last Name *</label>
+                                <input type="text" id="contactLastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="booking">Booking Assistance</option>
+                                <option value="custom">Custom Itinerary</option>
+                                <option value="group">Group Travel</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactDestination">Destination Interest</label>
+                            <select id="contactDestination" name="destination">
+                                <option value="">Select destination</option>
+                                <optgroup label="Asia">
+                                    <option value="china">China</option>
+                                    <option value="japan">Japan</option>
+                                    <option value="thailand">Thailand</option>
+                                    <option value="south_korea">South Korea</option>
+                                    <option value="vietnam">Vietnam</option>
+                                </optgroup>
+                                <optgroup label="Europe">
+                                    <option value="france">France</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="greece">Greece</option>
+                                </optgroup>
+                                <optgroup label="North America">
+                                    <option value="usa">United States</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="mexico">Mexico</option>
+                                </optgroup>
+                                <optgroup label="South America">
+                                    <option value="peru">Peru</option>
+                                    <option value="brazil">Brazil</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="chile">Chile</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="6" placeholder="Tell us about your travel plans, questions, or how we can help you..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" value="yes">
+                                Subscribe to our newsletter for travel tips and special offers
+                            </label>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                How far in advance should I book my trip?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We recommend booking at least 3-6 months in advance for international trips, especially during peak seasons. For last-minute deals, check our website regularly.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What is your cancellation policy?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our cancellation policy varies by destination and tour package. Generally, cancellations made 30+ days before departure receive a full refund minus a processing fee. Please check specific tour details for exact policies.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Do you offer travel insurance?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we offer comprehensive travel insurance through our trusted partners. It covers trip cancellation, medical emergencies, lost luggage, and more. You can add it during the booking process.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Can you customize itineraries?
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely! We specialize in creating personalized itineraries tailored to your preferences, budget, and travel style. Contact our travel experts to discuss your dream vacation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="map" class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Interactive Map</h3>
+                    <p>123 Travel Street, Adventure City, AC 12345</p>
+                    <div class="map-actions">
+                        <a href="https://maps.google.com/?q=123+Travel+Street,Adventure+City,AC+12345" class="btn-primary" target="_blank">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+                <!-- In a real implementation, you would embed Google Maps here -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.99879962401413!3d40.723216071390615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f1c0b9d9d%3A0x7f1a5a31b0b0b0b0!2s123%20Travel%20St%2C%20New%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/logoLive-life.png" alt="LiveLife Travel Agency Logo">
+                    <span>LiveLife Travel</span>
+                </div>
+                <p>Your trusted partner for unforgettable travel experiences around the world.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="asia.html">Asia</a></li>
+                    <li><a href="europe.html">Europe</a></li>
+                    <li><a href="north-america.html">North America</a></li>
+                    <li><a href="south-america.html">South America</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@livelifetravel.com</p>
+                <p><i class="fab fa-whatsapp"></i> +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Livelife Travel Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Contact Confirmation Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="confirmation-content">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Message Sent Successfully!</h2>
+                <p>Thank you for contacting Livelife Travel Agency. We have received your message and will get back to you within 24 hours.</p>
+                <div class="confirmation-details" id="contactConfirmationDetails">
+                    <!-- Contact details will be inserted here -->
+                </div>
+                <div class="confirmation-actions">
+                    <button id="closeContactModal" class="btn-primary">Close</button>
+                    <button id="newContactMessage" class="btn-secondary">Send Another Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contact.js"></script>
+    
+</body>
+</html>
